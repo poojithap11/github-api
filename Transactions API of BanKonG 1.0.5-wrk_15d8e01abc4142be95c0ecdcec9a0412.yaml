@@ -21,6 +21,9 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -53,13 +56,15 @@ collection:
         }
     headers:
       - name: Content-Type
-        disabled: false
         value: application/json
     authentication:
       type: apikey
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -83,6 +88,9 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -106,6 +114,9 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -127,6 +138,9 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true

@@ -162,6 +162,37 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8200/v1/secret/data/myapp
+    name: New Request
+    meta:
+      id: req_034311e3a47b4439a06dec72a9d796f0
+      created: 1753705068726
+      modified: 1753705122938
+      isPrivate: false
+      description: ""
+      sortKey: -1753705068726
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+      - name: X-Vault-Token
+        value: "{{ _.access_token.vault_token }}"
+      - name: Authorization
+        value: Bearer {{ _.access_token.api_key }}
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
