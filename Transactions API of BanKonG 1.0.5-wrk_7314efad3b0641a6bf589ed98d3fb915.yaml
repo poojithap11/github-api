@@ -1,15 +1,15 @@
 type: spec.insomnia.rest/5.0
 name: Transactions API of BanKonG 1.0.5
 meta:
-  id: wrk_15d8e01abc4142be95c0ecdcec9a0412
-  created: 1752228252046
-  modified: 1752228252046
+  id: wrk_7314efad3b0641a6bf589ed98d3fb915
+  created: 1752229356799
+  modified: 1752229356799
   description: ""
 collection:
   - url: "{{ _.base_url }}/transactions"
     name: List all transactions
     meta:
-      id: req_81f4899049dc43118b9210df5e1a8825
+      id: req_45447c9f61084f91a5e412a57e806b07
       created: 1752228318280
       modified: 1752228318280
       isPrivate: false
@@ -21,6 +21,9 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -32,7 +35,7 @@ collection:
   - url: "{{ _.base_url }}/transactions"
     name: Create new transaction
     meta:
-      id: req_fd13eb543919430e921ae990edab7cdc
+      id: req_bb8e4d4d05724b44b0c6b38f965ff428
       created: 1752228318280
       modified: 1752228318280
       isPrivate: false
@@ -53,13 +56,15 @@ collection:
         }
     headers:
       - name: Content-Type
-        disabled: false
         value: application/json
     authentication:
       type: apikey
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -71,7 +76,7 @@ collection:
   - url: "{{ _.base_url }}/transactions/{{ _.id }}"
     name: Cancel a transaction
     meta:
-      id: req_1c5c04e38b0e4c908e1e759cf42db0ba
+      id: req_3346b341957649c78f3c7e0912a57f5b
       created: 1752228318281
       modified: 1752228318281
       isPrivate: false
@@ -83,6 +88,9 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -94,7 +102,7 @@ collection:
   - url: "{{ _.base_url }}/transactions/{{ _.id }}"
     name: Get specific transaction
     meta:
-      id: req_a322ac7f6ef04f33841276b55247a3dc
+      id: req_bec54dcd46d34fcf9f29a11c9195ae6b
       created: 1752228318281
       modified: 1752228318281
       isPrivate: false
@@ -106,6 +114,9 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -117,9 +128,9 @@ collection:
   - url: https://localhost:3000
     name: New Request
     meta:
-      id: req_b1b8faceea394ad6886c5880dc943ad4
+      id: req_362b2578c4f24c708efb5b4e91106066
       created: 1752228320793
-      modified: 1752228328127
+      modified: 1756097181152
       isPrivate: false
       description: ""
       sortKey: -1752228320793
@@ -127,6 +138,33 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:8000
+    name: New Request
+    meta:
+      id: req_1ca9ff9ad7f648edbf93990b51def75a
+      created: 1752228823139
+      modified: 1752228836047
+      isPrivate: false
+      description: ""
+      sortKey: -1752228823139
+    method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -138,13 +176,13 @@ collection:
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_0c83ca596090cf1d401e20906b74a92e3da1e1d6
+    id: jar_961b971b79f0436d9c0a08d2f08ceb5f
     created: 1752228253539
     modified: 1752228253539
 environments:
   name: Base Environment
   meta:
-    id: env_0c83ca596090cf1d401e20906b74a92e3da1e1d6
+    id: env_db33f38b4e014b369e58bc3754c759be
     created: 1752228252066
     modified: 1752228318279
     isPrivate: false
@@ -153,7 +191,7 @@ environments:
   subEnvironments:
     - name: OpenAPI env localhost:3000
       meta:
-        id: env_08308f61eed34918b95c77379cf88a13
+        id: env_000abd65de1346268c38a4f7849684ac
         created: 1752228318279
         modified: 1752228318279
         isPrivate: false
@@ -328,6 +366,6 @@ spec:
           scheme: bearer
           bearerFormat: JWT
   meta:
-    id: spc_52539930f04c42a68e0c6d7f4b823416
-    created: 1752228252065
-    modified: 1752228252066
+    id: spc_bc4f47c2f494491bbe6c13f4aea1752b
+    created: 1752229356829
+    modified: 1752229356830

@@ -1,15 +1,15 @@
 type: spec.insomnia.rest/5.0
-name: Transactions API of BanKonG 1.0.5
+name: testing
 meta:
-  id: wrk_bfe1ce13174d476193ab467873b0dd90
-  created: 1752228816838
-  modified: 1752228816838
+  id: wrk_d21cfdbb11c74582b257be7bcf0740f8
+  created: 1752229184130
+  modified: 1752229345347
   description: ""
 collection:
   - url: "{{ _.base_url }}/transactions"
     name: List all transactions
     meta:
-      id: req_056a6c8c3df9428694d4cef1c62f9153
+      id: req_3b0e8b09591b4098b413ee7ebb4550dc
       created: 1752228318280
       modified: 1752228318280
       isPrivate: false
@@ -35,7 +35,7 @@ collection:
   - url: "{{ _.base_url }}/transactions"
     name: Create new transaction
     meta:
-      id: req_5be61def8508452c9e4c36de1b404db9
+      id: req_603afacd705c43fcb2b91d39ce136f02
       created: 1752228318280
       modified: 1752228318280
       isPrivate: false
@@ -76,7 +76,7 @@ collection:
   - url: "{{ _.base_url }}/transactions/{{ _.id }}"
     name: Cancel a transaction
     meta:
-      id: req_be0ab72ba8fe40aebf1e92bb5f305ca5
+      id: req_0bfc7990d2214ab7bdc02b362124b5b8
       created: 1752228318281
       modified: 1752228318281
       isPrivate: false
@@ -102,7 +102,7 @@ collection:
   - url: "{{ _.base_url }}/transactions/{{ _.id }}"
     name: Get specific transaction
     meta:
-      id: req_bfd0e791671f40a5b6730c44dd33d19e
+      id: req_76ff60c74bd14686b33b1ad8ad353ff9
       created: 1752228318281
       modified: 1752228318281
       isPrivate: false
@@ -128,7 +128,7 @@ collection:
   - url: https://localhost:3000
     name: New Request
     meta:
-      id: req_5f06af4930114a54944182059542a33a
+      id: req_c074f96183a847d08596a148a006fd57
       created: 1752228320793
       modified: 1752228328127
       isPrivate: false
@@ -152,13 +152,37 @@ collection:
   - url: https://localhost:8000
     name: New Request
     meta:
-      id: req_bb71afc0f7e44148a2e1e87344d082b7
+      id: req_51fc4ce61b374da2a560cb36024da535
       created: 1752228823139
       modified: 1752228836047
       isPrivate: false
       description: ""
       sortKey: -1752228823139
     method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://localhost:8000
+    name: New Request
+    meta:
+      id: req_11adc89d61ea4581a5b0cf152fb8b25d
+      created: 1752229205139
+      modified: 1752229213075
+      isPrivate: false
+      description: ""
+      sortKey: -1752229205139
+    method: GET
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
@@ -173,13 +197,13 @@ collection:
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_5e7c17973fe34985b4391f9f34dd7bff
+    id: jar_1c03d3c1c5544d9ebe01ce9daaff9230
     created: 1752228253539
     modified: 1752228253539
 environments:
   name: Base Environment
   meta:
-    id: env_a79f927f579448bca5ba94c0b8ac7a15
+    id: env_4e7bb96cbfba432baf01d354678d02b2
     created: 1752228252066
     modified: 1752228318279
     isPrivate: false
@@ -188,7 +212,7 @@ environments:
   subEnvironments:
     - name: OpenAPI env localhost:3000
       meta:
-        id: env_d5d14bea09fe4f54a9868fdc3928ae01
+        id: env_a35a365a39b346c5b72a54935e3e241f
         created: 1752228318279
         modified: 1752228318279
         isPrivate: false
@@ -363,6 +387,6 @@ spec:
           scheme: bearer
           bearerFormat: JWT
   meta:
-    id: spc_c903c8cf00b24d4db12f1ca13aa26c34
-    created: 1752228816842
-    modified: 1752228816843
+    id: spc_19fb3b51578843c98ebc5d41582a0359
+    created: 1752229184162
+    modified: 1752229345328
