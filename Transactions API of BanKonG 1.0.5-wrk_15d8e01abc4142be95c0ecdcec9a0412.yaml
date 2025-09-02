@@ -126,12 +126,8 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
-        id: pair_79da71a0eb094d2080a7e11218510e0f
-      - id: pair_71db518161d14f7582b04c23a7b2cd46
-        name: Content-Type
+      - name: Content-Type
         value: aplication
-        description: ""
-        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
