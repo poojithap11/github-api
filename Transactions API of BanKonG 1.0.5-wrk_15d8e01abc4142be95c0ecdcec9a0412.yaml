@@ -118,7 +118,7 @@ collection:
     meta:
       id: req_b1b8faceea394ad6886c5880dc943ad4
       created: 1752228320793
-      modified: 1752228328127
+      modified: 1756789259996
       isPrivate: false
       description: ""
       sortKey: -1752228320793
@@ -126,48 +126,12 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: ""
-    name: New Request
-    meta:
-      id: req_27548e46a15d496fa2a7e923c431db17
-      created: 1754563950400
-      modified: 1754563950400
-      isPrivate: false
-      description: ""
-      sortKey: -1754563950400
-    method: GET
-    headers:
-      - name: User-Agent
-        value: insomnia/11.4.0
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: ""
-    name: New Request
-    meta:
-      id: req_61a358ecde5d4a01bfdb1a66004bdd89
-      created: 1754563954336
-      modified: 1754563956850
-      isPrivate: false
-      description: ""
-      sortKey: -1754563954336
-    method: POST
-    headers:
-      - name: User-Agent
-        value: insomnia/11.4.0
+        id: pair_79da71a0eb094d2080a7e11218510e0f
+      - id: pair_71db518161d14f7582b04c23a7b2cd46
+        name: Content-Type
+        value: aplication
+        description: ""
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true

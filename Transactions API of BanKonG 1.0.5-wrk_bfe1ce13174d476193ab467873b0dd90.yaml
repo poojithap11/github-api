@@ -180,6 +180,27 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: https://localhost
+    name: New Request
+    meta:
+      id: req_b279fb41ac1141f89f346cc1013a3059
+      created: 1756788853172
+      modified: 1756788886858
+      isPrivate: false
+      description: ""
+      sortKey: -1756788853172
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
