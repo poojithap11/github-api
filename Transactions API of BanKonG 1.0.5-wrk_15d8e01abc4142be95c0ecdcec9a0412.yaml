@@ -118,7 +118,7 @@ collection:
     meta:
       id: req_b1b8faceea394ad6886c5880dc943ad4
       created: 1752228320793
-      modified: 1752228328127
+      modified: 1756789371108
       isPrivate: false
       description: ""
       sortKey: -1752228320793
@@ -126,6 +126,12 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
+        id: pair_9ffe61b1f1864c59acea66e1b34c0c2b
+      - id: pair_48bb4df91985489d9eb00e33ca5d33da
+        name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
