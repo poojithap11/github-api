@@ -21,9 +21,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -62,9 +59,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -88,9 +82,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -114,9 +105,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -138,9 +126,48 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
-    scripts:
-      preRequest: ""
-      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_27548e46a15d496fa2a7e923c431db17
+      created: 1754563950400
+      modified: 1754563950400
+      isPrivate: false
+      description: ""
+      sortKey: -1754563950400
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_61a358ecde5d4a01bfdb1a66004bdd89
+      created: 1754563954336
+      modified: 1754563956850
+      isPrivate: false
+      description: ""
+      sortKey: -1754563954336
+    method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -344,4 +371,4 @@ spec:
   meta:
     id: spc_52539930f04c42a68e0c6d7f4b823416
     created: 1752228252065
-    modified: 1752228252066
+    modified: 1754563926275

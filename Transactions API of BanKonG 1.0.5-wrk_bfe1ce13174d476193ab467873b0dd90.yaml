@@ -21,9 +21,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -62,9 +59,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -88,9 +82,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -114,9 +105,6 @@ collection:
       key: apikey
       value: "{{ _.apikey }}"
       addTo: header
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -138,9 +126,6 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -162,9 +147,6 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.3.0
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -190,9 +172,6 @@ collection:
         value: "{{ _.access_token.vault_token }}"
       - name: Authorization
         value: Bearer {{ _.access_token.api_key }}
-    scripts:
-      preRequest: ""
-      afterResponse: ""
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -396,4 +375,4 @@ spec:
   meta:
     id: spc_c903c8cf00b24d4db12f1ca13aa26c34
     created: 1752228816842
-    modified: 1752228816843
+    modified: 1754981355835
