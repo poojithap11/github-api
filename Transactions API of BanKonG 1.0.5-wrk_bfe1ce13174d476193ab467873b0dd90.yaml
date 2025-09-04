@@ -134,52 +134,6 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://localhost:8000
-    name: New Request
-    meta:
-      id: req_bb71afc0f7e44148a2e1e87344d082b7
-      created: 1752228823139
-      modified: 1752228836047
-      isPrivate: false
-      description: ""
-      sortKey: -1752228823139
-    method: POST
-    headers:
-      - name: User-Agent
-        value: insomnia/11.3.0
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: http://127.0.0.1:8200/v1/secret/data/myapp
-    name: New Request
-    meta:
-      id: req_034311e3a47b4439a06dec72a9d796f0
-      created: 1753705068726
-      modified: 1753705122938
-      isPrivate: false
-      description: ""
-      sortKey: -1753705068726
-    method: GET
-    headers:
-      - name: User-Agent
-        value: insomnia/11.3.0
-      - name: X-Vault-Token
-        value: "{{ _.access_token.vault_token }}"
-      - name: Authorization
-        value: Bearer {{ _.access_token.api_key }}
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
   - url: https://localhost
     name: New Request
     meta:
@@ -396,4 +350,4 @@ spec:
   meta:
     id: spc_c903c8cf00b24d4db12f1ca13aa26c34
     created: 1752228816842
-    modified: 1754981355835
+    modified: 1756974177800
